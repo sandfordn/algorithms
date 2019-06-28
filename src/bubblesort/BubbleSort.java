@@ -30,14 +30,17 @@ public class BubbleSort {
             for (int j = 0; j < arrayToSort.length - i; j++) {
                 int current = j;
                 int next = j + 1;
+                boolean swap = false;
                 if (arrayToSort[current] > arrayToSort[next]) {
                     int temp = arrayToSort[current];
                     arrayToSort[current] = arrayToSort[next];
                     arrayToSort[next] = temp;
+                    swap = true;
                 }
-                System.out.println("Pass " + (i + 1) + '.' + current + ": " + printArray(arrayToSort));
+                System.out.println("Pass " + i + '.' + (current + 1) + ": " + printArray(arrayToSort));
+                printIndicator(current, swap);
             }
-            System.out.println("Array at end of pass " + (i + 1) + ": " + printArray(arrayToSort));
+            System.out.println("Array at end of pass " + i + ": " + printArray(arrayToSort));
             System.out.println("\n");
         }
         System.out.println("Sorted array: " + printArray(arrayToSort));
@@ -55,21 +58,15 @@ public class BubbleSort {
         return array.toString();
     }
 
-    private String printArrayPass(int[] arrayToPrint, int pass) {
-        StringBuilder array = new StringBuilder();
-        array.append('[');
-        for (int i = 0; i < arrayToPrint.length - 1; i++) {
-            if (i == pass) {
-                array.append('<');
-                array.append(arrayToPrint[i]);
-                array.append('>');
-            } else {
-                array.append(arrayToPrint[i]);
-                array.append(", ");
-            }
+    private void printIndicator(int index, boolean swap) {
+        String print = "           ";
+        for (int i = 0; i < index; i++) {
+            print += "   ";
         }
-        array.append(arrayToPrint[arrayToPrint.length - 1]);
-        array.append(']');
-        return array.toString();
+        print += "^";
+        if (swap) {
+            print += "--^";
+        }
+        System.out.println(print);
     }
 }
