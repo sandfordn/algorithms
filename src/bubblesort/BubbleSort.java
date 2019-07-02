@@ -2,9 +2,12 @@ package bubblesort;
 
 public class BubbleSort {
 
+    private Output output = new Output();
+
     public static void main(String[] args) {
         BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.sort(new int[]{4,2,5,1,3});
+        int[] arrayToSort = new int[]{4,2,5,1,3};
+        bubbleSort.sort(arrayToSort);
     }
 
 //    start bubble sort
@@ -19,7 +22,7 @@ public class BubbleSort {
 
     private void sort(int[] arrayToSort) {
 
-        System.out.println("Sorting array: " + printArray(arrayToSort) + '\n');
+        System.out.println("Sorting array: " + output.printArray(arrayToSort) + '\n');
         // loop through all numbers in the range 0 to the length of the array
         for (int i = 1; i < arrayToSort.length - 1; i++) {
             // loop through all numbers in the range 1 to the length of the array
@@ -35,53 +38,11 @@ public class BubbleSort {
                     arrayToSort[next] = temp;
                     swap = true;
                 }
-                printPass(i, current, next, arrayToSort, swap);
-                printIndicator(current, swap);
+                output.printPass(i, current, next, arrayToSort, swap);
+                output.printIndicator(current, swap);
             }
-            printUpdatedArray(arrayToSort, i);
-            System.out.println("\n");
+            output.printUpdatedArray(arrayToSort, i);
         }
-        printSortedArray("Sorted array: " + printArray(arrayToSort));
-    }
-
-    private void printSortedArray(String s) {
-        System.out.println(s);
-    }
-
-    private void printUpdatedArray(int[] arrayToSort, int i) {
-        System.out.println("Array at end of pass " + i + ": " + printArray(arrayToSort));
-    }
-
-    private void printPass(int i, int current, int next, int[] arrayToSort, boolean swap) {
-        System.out.println("Pass " + i + ", move " + (current + 1) + ": " + printArray(arrayToSort) + " " + printSwap(swap, arrayToSort[next], arrayToSort[current]));
-    }
-
-    private String printSwap(boolean swap, int lhs, int rhs) {
-        if (swap) {
-            return lhs + " swapped with " + rhs;
-        }
-        return "no swap";
-    }
-
-    private String printArray(int[] arrayToPrint) {
-        StringBuilder array = new StringBuilder();
-        array.append('[');
-        for (int i = 0; i < arrayToPrint.length - 1; i++) {
-            array.append(arrayToPrint[i]);
-            array.append(", ");
-        }
-        array.append(arrayToPrint[arrayToPrint.length - 1]);
-        array.append(']');
-        return array.toString();
-    }
-
-    private void printIndicator(int index, boolean swap) {
-        String print = "                 ";
-        for (int i = 0; i < index; i++) {
-            print += "   ";
-        }
-        if (swap) print += "^--^";
-        else print += "x--x";
-        System.out.println(print);
+        output.printSortedArray(arrayToSort);
     }
 }
