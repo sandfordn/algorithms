@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a38c4c7-1915-40fa-95e5-4130d327a69e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bubblesort/Output.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/algorithms/bubblesort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithms/bubblesort/BubbleSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bubblesort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bubblesort/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bubblesort/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bubblesort/Output.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bubblesort/BubbleSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="-44">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bubblesort/Output.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="260">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="e#92#93#0" expanded="true" />
                 <element signature="e#129#130#0" expanded="true" />
@@ -162,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561719639663</updated>
-      <workItem from="1561719640942" duration="10412000" />
+      <workItem from="1561719640942" duration="12138000" />
     </task>
     <task id="LOCAL-00001" summary="Removed Main class">
       <created>1561733284842</created>
@@ -185,15 +185,28 @@
       <option name="project" value="$ENVIRONMENT$" />
       <updated>1561974611098</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactored + moved all printing methods into separate class">
+      <created>1562075712348</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="$ENVIRONMENT$" />
+      <updated>1562075712348</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactored code">
+      <created>1562076040404</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="$ENVIRONMENT$" />
+      <updated>1562076040404</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10412000" />
+    <option name="totallyTimeSpent" value="12138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3840" y="-819" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -237,7 +250,9 @@
     <MESSAGE value="Removed Main class" />
     <MESSAGE value="Improved terminal output" />
     <MESSAGE value="Refactored + split out some logic into methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored + split out some logic into methods" />
+    <MESSAGE value="Refactored + moved all printing methods into separate class" />
+    <MESSAGE value="Refactored code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -256,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bubblesort/Output.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="260">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="e#92#93#0" expanded="true" />
             <element signature="e#129#130#0" expanded="true" />
@@ -267,8 +282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bubblesort/BubbleSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="-44">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
         </state>
       </provider>
     </entry>

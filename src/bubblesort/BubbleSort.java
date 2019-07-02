@@ -20,29 +20,33 @@ public class BubbleSort {
 //        end loop
 //    end bubble sort
 
+    // start bubble sort
     private void sort(int[] arrayToSort) {
 
         output.printUnsortedArray(arrayToSort);
-        // loop through all numbers in the range 0 to the length of the array
-        for (int i = 1; i < arrayToSort.length - 1; i++) {
-            // loop through all numbers in the range 1 to the length of the array
-            for (int j = 0; j < arrayToSort.length - i; j++) {
-                int current = j;
-                int next = j + 1;
+        // loop through all numbers in the range 0 to the length of the array:
+
+            // loop through all numbers in the range 1 to the length of the array:
+
+                // define current position:
+
+                // define next position:
+
                 boolean swap = false;
-                // check if the last number in the array is greater than the current number
-                if (arrayToSort[current] > arrayToSort[next]) {
-                    // swap the two numbers
-                    int temp = arrayToSort[current];
-                    arrayToSort[current] = arrayToSort[next];
-                    arrayToSort[next] = temp;
+                // check if the last number in the array is greater than the current number:
+
+                    // swap the two numbers:
+
                     swap = true;
-                }
-                output.printPass(i, current, next, arrayToSort, swap);
-                output.printIndicator(current, swap);
-            }
-            output.printUpdatedArray(arrayToSort, i);
-        }
+                // end if:
+
+                // output.printPass(i, current, next, arrayToSort, swap);
+            // end for loop:
+
+            //output.printUpdatedArray(arrayToSort, i);
+        // end for loop:
+
         output.printSortedArray(arrayToSort);
     }
+    // end bubble sort
 }

@@ -16,6 +16,7 @@ public class Output {
 
     public void printPass(int i, int current, int next, int[] arrayToSort, boolean swap) {
         System.out.println("Pass " + i + ", move " + (current + 1) + ": " + printArray(arrayToSort) + " " + printSwap(swap, arrayToSort[next], arrayToSort[current]));
+        printIndicator(current, swap);
     }
 
     public String printSwap(boolean swap, int lhs, int rhs) {
