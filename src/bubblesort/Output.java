@@ -2,12 +2,16 @@ package bubblesort;
 
 public class Output {
 
+    public void printUnsortedArray(int[] arrayToSort) {
+        System.out.println("Sorting array: " + printArray(arrayToSort) + '\n');
+    }
+
     public void printSortedArray(int[] arrayToSort) {
         System.out.println("Sorted array: " + printArray(arrayToSort));
     }
 
     public void printUpdatedArray(int[] arrayToSort, int i) {
-        System.out.println("Array at end of pass " + i + ": " + printArray(arrayToSort) + "\n");
+        System.out.println("Array at end of pass " + i + ": " + printArray(arrayToSort) + "\n\n");
     }
 
     public void printPass(int i, int current, int next, int[] arrayToSort, boolean swap) {

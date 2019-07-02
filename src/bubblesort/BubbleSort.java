@@ -22,7 +22,7 @@ public class BubbleSort {
 
     private void sort(int[] arrayToSort) {
 
-        System.out.println("Sorting array: " + output.printArray(arrayToSort) + '\n');
+        output.printUnsortedArray(arrayToSort);
         // loop through all numbers in the range 0 to the length of the array
         for (int i = 1; i < arrayToSort.length - 1; i++) {
             // loop through all numbers in the range 1 to the length of the array
