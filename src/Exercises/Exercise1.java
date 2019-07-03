@@ -9,7 +9,7 @@ public class Exercise1 {
     }
 
     // Exercise 1
-    public static void print(int[] values) {
+    private static void print(int[] values) {
         // Write solution here
     }
 }
