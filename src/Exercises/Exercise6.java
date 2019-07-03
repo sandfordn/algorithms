@@ -12,7 +12,7 @@ public class Exercise6 {
     }
 
     // Exercise 4
-        // Copy solution from exercise 3
+        // Copy solution from exercise 4
 
     // Exercise 3
     private static void bubbleSort(int[] values) {
