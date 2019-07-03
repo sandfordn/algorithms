@@ -12,7 +12,7 @@ public class BubbleSort {
 
 //    start bubble sort
 //        loop through all numbers in the range 0 to the length of the array
-//            loop through all numbers in the range 1 to the length of the array
+//            loop through all numbers in the range 1 to the length of the array minus the sorted items
 //                check if the last number in the array is greater than the current number
 //                    swap the two numbers
 //                end if
@@ -26,7 +26,7 @@ public class BubbleSort {
         output.printUnsortedArray(arrayToSort);
         // loop through all numbers in the range 0 to the length of the array:
 
-            // loop through all numbers in the range 1 to the length of the array:
+            // loop through all numbers in the range 1 to the length of the array minus the sorted items:
 
                 // define current position:
 
